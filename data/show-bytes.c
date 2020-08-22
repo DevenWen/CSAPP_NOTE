@@ -104,13 +104,13 @@ int main(int argc, char *argv[])
     int val = 12345;
 
     if (argc > 1) {
-	if (argc > 1) {
-	    val = strtol(argv[1], NULL, 0);
-	}
-	printf("calling test_show_bytes\n");
-	test_show_bytes(val);
+	    if (argc > 1) {
+	        val = strtol(argv[1], NULL, 0);
+	    }
+	    printf("calling test_show_bytes, version 2\n");
+	    test_show_bytes(val);
     } else {
-	printf("calling show_twocomp\n");
+	printf("calling show_twocomp, version 3\n");
 	show_twocomp();
 	printf("Calling simple_show_a\n");
 	simple_show_a();
