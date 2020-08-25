@@ -1,10 +1,6 @@
 /* $begin hello */
-#include <stdio.h>
 #include <csapp.h>
+#include <stdio.h>
 
-int main() 
-{
-    printf("hello, world,qpm!\n");
-}
+int main() { printf("hello, world,qpm!\n"); }
 /* $end hello */
-
